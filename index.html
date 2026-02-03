@@ -2,26 +2,36 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>ระบบบันทึกข้อมูล</title>
+    <title>งานส่งสินค้า</title>
+
+    <!-- สำคัญมากสำหรับมือถือ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <style>
-        /* ความสูง/ความกว้างของ iframe ปรับได้ตามต้องการ */
-        .app-frame {
+        html, body {
+            margin: 0;
+            padding: 0;
             width: 100%;
-            height: 800px; /* ปรับตามความสูงที่ต้องการ */
+            height: 100%;
+            overflow: hidden; /* ป้องกัน scroll ซ้อน */
+        }
+
+        .app-frame {
+            width: 100vw;     /* เต็มความกว้างจอ */
+            height: 100vh;    /* เต็มความสูงจอ */
             border: none;
+            display: block;
         }
     </style>
 </head>
 <body>
 
-<h2>งานส่งสินค้า</h2>
-
 <iframe
     class="app-frame"
     src="https://script.google.com/macros/s/AKfycbwNbOCYn7oiliZfXcuKSL89psadjVIyAzTxyY5tfj35V9eFDv74KoaVf2LEluRkbcNl9w/exec"
+    allow="camera; microphone; fullscreen"
     allowfullscreen
 ></iframe>
 
 </body>
 </html>
-
